@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+      body{
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+        .center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  height: 50vh;
+  justify-content: space-evenly;
+}
+
+.box{
+  width: 270px;
+  height: 285px;
+  box-shadow: 0 10px 20px rgba(0, 0,0.288);
+  border-radius: 23px;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+.box:hover{
+  width: 290px;
+  height: 295px;
+  box-shadow: 0 10px 20px rgba(0, 0,0.288);
+  border-radius: 23px;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background-color: whitesmoke;
+  transition: all 0.5s;
+}
+.box img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+
+}
+.user-name{
+  margin-bottom: 5px;
+  font-size: 2rem;
+  color: black;
+}
+button{
+    cursor: pointer;
+    width: 80%;
+    height: 30px;
+    font-weight: bolder;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #f18888;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.box:hover .overlay{
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+}
+    </style>
+</head>
+
+
+<body background="bg.jpg">
+
+        <div class="main center">
+            <!--player1-->
+        <div class="box center">
+            
+        <img src="abhi.jpg" alt="">
+        <div class="overlay">
+           <center>
+            <div class="text">
+                <h2>All-rounder</h2>
+                <h5>Left-handed</h5>
+                <h5>off-spin</h5>
+                <h5>Rating:3.0/5</h5>
+              <!--   <center><button>Add-to-cart</button></center> -->
+            </div>
+           </center>
+          </div>
+        <div>
+           
+            <p class="user-name">Abhishek</p>
+         
+        </div>
+      
+        
+        </div>
+        
+         <!--player2-->
+        <div class="box center">
+            <img src="priyam.jpg" alt="">
+            <div class="overlay">
+                <center>
+                 <div class="text">
+                     <h2>Batsmen</h2>
+                     <h5>Right-handed</h5>
+                     
+                     <h5>Rating:3.2/5</h5>
+                    <!--  <center><button>Add-to-cart</button></center> -->
+                 </div>
+                </center>
+               </div>
+            <div>
+                <p class="user-name">Priyam Garg</p>
+               
+              
+            </div>
+            </div>
+        
+        <!--player3-->
+            <div class="box center">
+                <img src="samad.jpg" alt="">
+                <div class="overlay">
+                    <center>
+                     <div class="text">
+                         <h2>All-rounder</h2>
+                         <h5>Right-handed</h5>
+                         <h5>off-spin</h5>
+                         <h5>Rating:3.5/5</h5>
+                         <!-- <center><button>Add-to-cart</button></center> -->
+                     </div>
+                    </center>
+                   </div>
+                <div>
+                    <p class="user-name">Abdul Samad</p>
+                   
+                   
+                </div>
+                </div>
+                <!--player4-->
+                <div class="box center">
+                  <img src="jagadeesh.png" alt="">
+                  <div class="overlay">
+                    <center>
+                     <div class="text">
+                         <h2>Batsmen</h2>
+                         <h5>Right-handed</h5>
+                        
+                         <h5>Rating:2.5/5</h5>
+                         <!-- <center><button>Add-to-cart</button></center> -->
+                     </div>
+                    </center>
+                   </div>
+                  <div>
+                      <p class="user-name">Jagadeeshan</p>
+                     
+                     
+                  </div>
+                  </div>
+        </div>
+       
+         <div class="main center">
+            <!--player1-->
+        <div class="box center">
+        <img src="viratsingh.jpg" alt="">
+        <div class="overlay">
+            <center>
+             <div class="text">
+                 <h2>Batsmen</h2>
+                 <h5>Left-handed</h5>
+                 
+                 <h5>Rating:2.5/5</h5>
+                 <!-- <center><button>Add-to-cart</button></center> -->
+             </div>
+            </center>
+           </div>
+        <div>
+            <p class="user-name">Virat Singh </p>
+           
+         
+        </div>
+      
+        
+        </div>
+        
+         <!--player2-->
+        <div class="box center">
+            <img src="shreyas.jpg" alt="">
+            <div class="overlay">
+                <center>
+                 <div class="text">
+                     <h2>All-rounder</h2>
+                     <h5>Right-handed</h5>
+                     <h5>leg break</h5>
+                     <h5>Rating:3.5/5</h5>
+                    <!--  <center><button>Add-to-cart</button></center> -->
+                 </div>
+                </center>
+               </div>
+            <div>
+                <p class="user-name">Shreyas Gopal</p>
+              
+               
+            </div>
+            </div>
+        
+        <!--player3-->
+            <div class="box center">
+                <img src="anukul.jpg" alt="">
+                <div class="overlay">
+                    <center>
+                     <div class="text">
+                         <h2>All-rounder</h2>
+                         <h5>Left-handed</h5>
+                         <h5>Slow</h5>
+                         <h5>Rating:2.5/5</h5>
+                         <!-- <center><button>Add-to-cart</button></center> -->
+                     </div>
+                    
+                    </center>
+                   </div>
+                <div>
+                    <p class="user-name">Anukul Roy</p>
+                   
+                   
+                </div>
+                </div>
+           <!--player4-->
+           <div class="box center">
+            <img src="harishankar.jpeg" alt="">
+            <div>
+                <p class="user-name">Harishankar</p>
+                <div class="overlay">
+                    <center>
+                     <div class="text">
+                         <h2>Bowler</h2>
+                         <h5>Right-handed</h5>
+                         <h5>pace</h5>
+                         <h5>Rating:3.5/5</h5>
+                        <!--  <center><button>Add-to-cart</button></center> -->
+                     </div>
+                    
+                    </center>
+                   </div>
+               
+               
+            </div>
+            </div>      
+        </div>
+       <!--row3-->
+        <div class="main center">
+          <!--player1-->
+      <div class="box center">
+      <img src="nithishrana.jpg" alt="">
+      <div>
+          <p class="user-name">Nithish Rana </p>
+          <div class="overlay">
+            <center>
+             <div class="text">
+                 <h2>Batsmen</h2>
+                 <h5>Left-handed</h5>
+                
+                 <h5>Rating:3.5/5</h5>
+                 <!-- <center><button>Add-to-cart</button></center> -->
+             </div>
+            </center>
+           </div>
+        
+       
+      </div>
+    
+      
+      </div>
+      
+       <!--player2-->
+      <div class="box center">
+          <img src="rahultripati.jpg" alt="">
+          <div class="overlay">
+            <center>
+             <div class="text">
+                 <h2>Batsmen</h2>
+                 <h5>Right-handed</h5>
+                 <h5>Rating:3.5/5</h5>
+                 <!-- <center><button>Add-to-cart</button></center> -->
+             </div>
+            
+            </center>
+           </div>
+          <div>
+              <p class="user-name">Rahul Tripati</p>
+             
+              
+          </div>
+          </div>
+      
+      <!--player3-->
+          <div class="box center">
+              <img src="sharukh.jpg" alt="">
+              <div class="overlay">
+                <center>
+                 <div class="text">
+                     <h2>All-rounder</h2>
+                     <h5>Right-handed</h5>
+                     <h5>off-spin</h5>
+                     <h5>Rating:3.5/5</h5>
+                     <!-- <center><button>Add-to-cart</button></center> -->
+                 </div>
+                
+                </center>
+               </div>
+              <div>
+                  <p class="user-name">Sharukh Khan</p>
+                 
+                 
+              </div>
+              </div>
+         <!--player4-->
+         <div class="box center">
+          <img src="lalith.jpg" alt="">
+          <div class="overlay">
+            <center>
+             <div class="text">
+                 <h2>Bowler</h2>
+                 <h5>Right-handed</h5>
+                 <h5>off-spin</h5>
+                 <h5>Rating:3.5/5</h5>
+             <!--     <center><button>Add-to-cart</button></center> -->
+             </div>
+            </center>
+           </div>
+          <div>
+              <p class="user-name">Lalit Yadav</p>
+              
+             <!--  <center><button>Add-to-cart</button></center> -->
+          </div>
+          </div>      
+      </div>
+     
+<!--row4-->
+      <div class="main center">
+        <!--player1-->
+    <div class="box center">
+    <img src="avesh.jpg" alt="">
+    <div class="overlay">
+        <center>
+         <div class="text">
+             <h2>Bowler</h2>
+             <h5>Right-handed</h5>
+             <h5>off-spin</h5>
+             <h5>Rating:3.5/5</h5>
+          <!--    <center><button>Add-to-cart</button></center> -->
+         </div>
+        </center>
+       </div>
+    <div>
+        <p class="user-name">Avesh Khan </p>
+        
+    
+    </div>
+  
+    
+    </div>
+    
+     <!--player2-->
+    <div class="box center">
+        <img src="akash.jpg" alt="">
+        <div class="overlay">
+            <center>
+             <div class="text">
+                 <h2>Bowler</h2>
+                 <h5>Right-handed</h5>
+                 <h5>off-spin</h5>
+                 <h5>Rating:3.5/5</h5>
+         <!--         <center><button>Add-to-cart</button></center> -->
+             </div>
+            </center>
+           </div>
+        <div>
+            <p class="user-name">Akash</p>
+         
+        </div>
+        </div>
+    
+    <!--player3-->
+        <div class="box center">
+            <img src="arshdeep.jpg" alt="">
+            <div class="overlay">
+                <center>
+                 <div class="text">
+                     <h2>Bowler</h2>
+                     <h5>Right-handed</h5>
+                     <h5>off-spin</h5>
+                     <h5>Rating:3.5/5</h5>
+                     <!-- <center><button>Add-to-cart</button></center> -->
+                 </div>
+                </center>
+               </div>
+            <div>
+                <p class="user-name">Arshdeep Singh</p>
+                
+                
+            </div>
+            </div>
+       <!--player4-->
+       <div class="box center">
+        <img src="bhanu.jpg" alt="">
+        <div class="overlay">
+            <center>
+             <div class="text">
+                 <h2>Bowler</h2>
+                 <h5>Right-handed</h5>
+                 <h5>off-spin</h5>
+                 <h5>Rating:3.5/5</h5>
+                 <!-- <center><button>Add-to-cart</button></center> -->
+             </div>
+            </center>
+           </div>
+        <div>
+            <p class="user-name">Bhanu</p>
+            
+        </div>
+        </div>      
+    </div>
+   
+<!--row5-->
+    <div class="main center">
+      <!--player1-->
+  <div class="box center">
+  <img src="chandu.jpg" alt="">
+  <div class="overlay">
+    <center>
+     <div class="text">
+         <h2>Bowler</h2>
+         <h5>Right-handed</h5>
+         <h5>Medium-pace</h5>
+         <h5>Rating:3.5/5</h5>
+        <!--  <center><button>Add-to-cart</button></center> -->
+     </div>
+    </center>
+   </div>
+  <div>
+      <p class="user-name">Chandu </p>
+   
+  </div>
+
+  
+  </div>
+  
+   <!--player2-->
+  <div class="box center">
+      <img src="dhanush.jpg" alt="">
+      <div class="overlay">
+        <center>
+         <div class="text">
+             <h2>Bowler</h2>
+             <h5>Right-handed</h5>
+             <h5>pace</h5>
+             <h5>Rating:3.5/5</h5>
+            <!--  <center><button>Add-to-cart</button></center> -->
+         </div>
+        </center>
+       </div>
+      <div>
+          <p class="user-name">Danush</p>
+          
+      </div>
+      </div>
+  
+  <!--player3-->
+      <div class="box center">
+          <img src="ravi.jpg" alt="">
+          <div class="overlay">
+            <center>
+             <div class="text">
+                 <h2>Bowler</h2>
+                 <h5>Right-handed</h5>
+                 <h5>Medium-pace </h5>
+                 <h5>Rating:3.5/5</h5>
+                <!--  <center><button>Add-to-cart</button></center> -->
+             </div>
+            </center>
+           </div>
+          <div>
+              <p class="user-name">Ravi</p>
+              
+          </div>
+          </div>
+     <!--player4-->
+     <div class="box center">
+      <img src="harish.jpg" alt="">
+      <div class="overlay">
+        <center>
+         <div class="text">
+             <h2>Bowler</h2>
+             <h5>Right-handed</h5>
+             <h5>off-spin</h5>
+             <h5>Rating:3.5/5</h5>
+            <!--  <center><button>Add-to-cart</button></center> -->
+         </div>
+        </center>
+       </div>
+      <div>
+          <p class="user-name">Harish</p>
+        
+      </div>
+      </div>      
+  </div>
+ 
+</body>
+</html>
